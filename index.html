@@ -3,37 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="845822050808-tjce2mn9ku0he2bql9vbn0567pbrbinu.apps.googleusercontent.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <title>Anxin ccJS</title>
+    <title>Custom YouTube</title>
     <style>
         *{
             box-sizing: border-box;
         }
         /* width */
         ::-webkit-scrollbar {
-            width: 6px;
+            width: 0px;
         }
 
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: transparent;
-            border-radius: 4px;
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: rgba(80,80,80, 0.5);
-            border-radius: 6px;
-        }
-
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
     </style>
 </head>
 <body  id="body" style="margin: 0;font-family: Arial;box-sizing: border-box; overflow: hidden;">
-
 </body>
 <script src="main.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://apis.google.com/js/client.js" async defer onload="window.startApp()"></script>
 </html>
