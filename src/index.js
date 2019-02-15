@@ -43,7 +43,20 @@ function renderVideo(video) {
             textAlign: 'center',
             padding: '8px',
             width: '320px',
-            cursor: 'pointer'
+            background: 'rgb(18,18,18)',
+            cursor: 'pointer',
+            margin: '8px',
+            transition: '0.2s'
+        })
+        .on('mouseenter', function () {
+            this.css({
+                background: 'rgb(64,64,64)'
+            })
+        })
+        .on('mouseleave', function () {
+            this.css({
+                background: 'rgb(18,18,18)'
+            })
         })
         .on('click', function () {
             player = (player && player.loadVideoById(video.id.videoId)) || new YT.Player('player', {
@@ -167,7 +180,8 @@ function index() {
             width: '100vw',
             padding: '32px',
             display: 'flex',
-            flexWrap: 'wrap'
+            flexWrap: 'wrap',
+            justifyContent: 'center'
         })
         .bind('searchResult', function (d) {
             let self = this;
@@ -180,7 +194,7 @@ function index() {
 
     app.add('div', 'watched')
         .css({
-            height: '100vh'
+            width: '100vw',
         })
 }
 index();
